@@ -11,7 +11,7 @@ datadir <- "/cloud/project/"
 ## Read data from file | "datadir" must be set | Do only once
 raw.clinical.data <- read.delim(paste0(datadir, "TCGA-COAD.GDC_phenotype.tsv"), row.names=1)
 raw.survival.data <- read.delim(paste0(datadir, "TCGA-COAD.survival.tsv"), row.names=1)
-raw.expression.data <- read.delim(paste0(datadir, "TCGA-COAD.htseq_fpkm-uq.tsv"), row.names=1)
+raw.expression.data <- read.table(paste0(datadir, "TCGA-COAD.htseq_fpkm-uq.tsv"), header=TRUE, row.names=1)
 
 
 # Convert GeneID from ENSG to Hugo Symbol
