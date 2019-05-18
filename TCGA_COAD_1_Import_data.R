@@ -9,9 +9,9 @@ library(CMScaller)
 datadir <- "/cloud/project/"
 
 ## Read data from file | "datadir" must be set | Do only once
-raw.clinical.data <- read.delim(paste0(datadir, "TCGA-READ.GDC_phenotype.tsv"), row.names=1)
-raw.survival.data <- read.delim(paste0(datadir, "TCGA-READ.survival.tsv"), row.names=1)
-raw.expression.data <- read.delim(paste0(datadir, "TCGA-READ.htseq_fpkm-uq.tsv"), row.names=1)
+raw.clinical.data <- read.delim(paste0(datadir, "TCGA-COAD.GDC_phenotype.tsv"), row.names=1)
+raw.survival.data <- read.delim(paste0(datadir, "TCGA-COAD.survival.tsv"), row.names=1)
+raw.expression.data <- read.delim(paste0(datadir, "TCGA-COAD.htseq_fpkm-uq.tsv"), row.names=1)
 
 
 # Convert GeneID from ENSG to Hugo Symbol
