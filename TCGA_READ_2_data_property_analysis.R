@@ -1,5 +1,5 @@
 ##
-## 1_2. Data property analysis
+## 2. Data property analysis
 
 library(ggplot2)
 library(ggpubr)
