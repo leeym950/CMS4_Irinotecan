@@ -18,7 +18,7 @@ substring(colnames(raw.expression.data),4,4) <- "-" # genes.RPS row.names are in
 
 ## Type column names you want to extract
 ## If not set, all data will be extracted
-extract.from.clinical.data <- c("survival.time", "survival", "DFS.time", "recurrence", "pCR", "CMS_Caller")
+extract.from.clinical.data <- c("survival.time", "survival", "DFS.time", "recurrence", "pCR", "CMS_Caller", "CMS_Caller_FDR")
 extract.from.expression.data <- c("TOP1","CES2")
 
 ## Extracting data
